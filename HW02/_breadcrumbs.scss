@@ -1,0 +1,24 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 148px;
+  background: rgb(248, 243, 244);
+
+  a {
+    color: rgb(99, 99, 99);
+  }
+
+  .pink_text {
+    color: $textAlightColor;
+  }
+
+  .categs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+}
