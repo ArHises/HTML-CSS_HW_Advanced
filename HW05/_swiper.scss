@@ -1,0 +1,121 @@
+// Slider
+.slider {
+  position: relative;
+  padding-bottom: 600px;
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgb(247, 247, 247);
+    border: 2px solid rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .description {
+    z-index: 2;
+    position: absolute;
+    top: 712px;
+    left: 20%;
+    right: 20%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: #fff;
+    border: 2px solid rgb(231, 231, 231);
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    min-width: 360px;
+
+    .pink_text {
+      color: $textAlightColor;
+    }
+
+    &__p {
+      min-width: 320px;
+      max-width: 555px;
+      text-align: center;
+      color: rgb(94, 94, 94);
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 17px;
+    }
+
+    .selection {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 6px;
+
+      p {
+        color: rgb(111, 110, 110);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+      }
+    }
+
+    .thick_line {
+      width: 63px;
+      height: 3px;
+      background-color: $textAlightColor;
+    }
+
+    h2 {
+      color: rgb(77, 77, 77);
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+    }
+
+    .thin_line {
+      width: 50%;
+      height: 1px;
+      background-color: rgb(234, 234, 234);
+    }
+
+    .cart_button {
+      width: 212px;
+      height: 48px;
+      color: $textAlightColor;
+      border: 1px solid $textAlightColor;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 5px;
+
+      svg path {
+        fill: $textAlightColor;
+        width: 26;
+        height: 24;
+      }
+    }
+
+    .cart_button:hover {
+      background-color: $textAlightColor;
+      p {
+        color: white;
+      }
+      svg path {
+        fill: white;
+      }
+    }
+  }
+}

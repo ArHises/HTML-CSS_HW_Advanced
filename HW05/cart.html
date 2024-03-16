@@ -10,16 +10,18 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OnlineShop-registration</title>
+    <title>OnlineShop-Cart</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="navi_bar center">
       <div class="navi_bar__search">
         <div class="logo_top navi_bar__logo">
-          <a href="#"> <img src="img/logo.svg" alt="shop logo" /> </a>
+          <a href="index.html"> <img src="img/logo.svg" alt="shop logo" /> </a>
         </div>
-        <a href="#"><img src="img/search icon.svg" alt="search icon" /></a>
+        <a href="products.html"
+          ><img src="img/search icon.svg" alt="search icon"
+        /></a>
       </div>
       <div class="navi_bar__tools">
         <div class="dropdown">
@@ -54,10 +56,10 @@
           </div>
         </div>
 
-        <a href="#" class="un_display">
+        <a href="registration.html" class="un_display">
           <img src="img/person icon.svg" alt="person"
         /></a>
-        <a href="#" class="un_display"
+        <a href="cart.html" class="un_display"
           ><img src="img/cart icon.svg" alt="cart"
         /></a>
       </div>
@@ -76,89 +78,92 @@
         </li>
       </ul>
     </div>
-    <div class="registration center">
-      <div class="registration__info">
-        <form action="#" id="form1" class="registration__form">
-          <h2 class="registration__h2">Your Name</h2>
-          <input
-            class="registration__input"
-            type="text"
-            placeholder="First Name"
-            required
-          />
-          <input
-            class="registration__input"
-            type="text"
-            placeholder="Last Name"
-            required
-          />
-
-          <div class="dots">
-            <label>
-              <input type="radio" name="gender" value="male" />
-              <span class="custom-radio"></span>Male
-            </label>
-            <label>
-              <input type="radio" name="gender" value="female" />
-              <span class="custom-radio"></span>Female
-            </label>
+    <div class="cart center">
+      <div class="cart__items">
+        <div class="cart__items__item">
+          <div class="cart__items__item__left">
+            <img src="/HW03/img/man.svg" alt="man" />
+            <div class="info">
+              <h2>
+                MANGO PEOPLE <br />
+                T-SHIRT
+              </h2>
+              <div class="info__type">
+                <div class="price">
+                  <p>Price:</p>
+                  <p class="pink_text">$300</p>
+                </div>
+                <p>Color: Red</p>
+                <p>Size: Xl</p>
+                <label for="amount">Quantity: </label>
+                <input
+                  type="number"
+                  id="amount"
+                  min="1"
+                  max="10"
+                  placeholder="2"
+                />
+              </div>
+            </div>
           </div>
-          <h2 class="registration__h2">Login details</h2>
-          <input
-            class="registration__input"
-            type="email"
-            placeholder="Email"
-            required
-          />
-          <input
-            class="registration__input"
-            type="password"
-            placeholder="Password"
-            minlength="8"
-            required
-          />
-        </form>
-        <p class="registration__p">
-          Please use 8 or more characters, with at least 1 number and a mixture
-          of uppercase and lowercase letters
-        </p>
-        <button form="form1" class="join-button" type="submit" value="Submit">
-          JOIN NOW
-          <svg
-            width="5.669067"
-            height="9.918610"
-            viewBox="0 0 5.66907 9.91861"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <desc>Created with Pixso.</desc>
-            <defs />
-            <path
-              id="Vector"
-              d="M0.20813 0.208099C0.273926 0.14212 0.352051 0.0897827 0.43811 0.0540771C0.52417 0.0183716 0.616455 0 0.709595 0C0.802734 0 0.89502 0.0183716 0.981079 0.0540771C1.06714 0.0897827 1.14526 0.14212 1.21106 0.208099L5.46094 4.45801C5.52698 4.5238 5.57922 4.60196 5.61499 4.68802C5.65063 4.77408 5.66907 4.86633 5.66907 4.9595C5.66907 5.05267 5.65063 5.1449 5.61499 5.23096C5.57922 5.31702 5.52698 5.39517 5.46094 5.46097L1.21106 9.71088C1.07812 9.8439 0.897705 9.91861 0.709595 9.91861C0.521484 9.91861 0.341064 9.8439 0.20813 9.71088C0.0750732 9.57788 0.000366211 9.39749 0.000366211 9.20941C0.000366211 9.0213 0.0750732 8.84091 0.20813 8.70792L3.95789 4.9595L0.20813 1.21106C0.14209 1.14526 0.0898438 1.06711 0.0540771 0.981049C0.0184326 0.89502 0 0.802765 0 0.709595C0 0.616425 0.0184326 0.52417 0.0540771 0.43811C0.0898438 0.352051 0.14209 0.273895 0.20813 0.208099Z"
-              fill="#000"
-              fill-opacity="1.000000"
-              fill-rule="evenodd"
-            />
-          </svg>
-        </button>
+
+          <a href="#" class="close-x"><img src="/HW03/img/x.svg" alt="X" /></a>
+        </div>
+        <div class="cart__items__item">
+          <div class="cart__items__item__left">
+            <img src="/HW03/img/man.svg" alt="man" />
+            <div class="info">
+              <h2>
+                MANGO PEOPLE <br />
+                T-SHIRT
+              </h2>
+              <div class="info__type">
+                <div class="price">
+                  <p>Price:</p>
+                  <p class="pink_text">$300</p>
+                </div>
+                <p>Color: Red</p>
+                <p>Size: Xl</p>
+                <label for="amount">Quantity: </label>
+                <input
+                  type="number"
+                  id="amount"
+                  min="1"
+                  max="10"
+                  placeholder="2"
+                />
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="close-x"><img src="/HW03/img/x.svg" alt="X" /></a>
+        </div>
+        <div class="cart__options">
+          <a href="#" class="cart__button"> CLEAR SHOPPING CART </a>
+
+          <a href="#" class="cart__button"> CLEAR SHOPPING CART </a>
+        </div>
       </div>
-      <div class="registration__ditails">
-        <h2 class="registration__h2">LOYALTY HAS ITS PERKS</h2>
-        <h3 class="registration__h2">
-          Get in on the loyalty program where you can earn points and unlock
-          serious perks. Starting with these as soon as you join:
-        </h3>
-        <ul>
-          <li class="registration__h2">15% off welcome offer</li>
-          <li class="registration__h2">
-            Free shipping, returns and exchanges on all orders
-          </li>
-          <li class="registration__h2">$10 off a purchase on your birthday</li>
-          <li class="registration__h2">Early access to products</li>
-          <li class="registration__h2">Exclusive offers & rewards</li>
-        </ul>
+      <div class="cart__check-out">
+        <div class="cart__adress">
+          <h2>SHIPPING ADRESS</h2>
+          <form calss="cart__adress__ditails" id="adress" action="#">
+            <input type="text" placeholder="Bangladesh" />
+            <input type="text" placeholder="State" />
+            <input type="text" placeholder="PostCode / ZIP" />
+          </form>
+          <a href="#" type="submit" for="adress">GET A QUOTE</a>
+        </div>
+        <div class="cart__checkout">
+          <div class="cart__checkout__pay">
+            <p>SUB TOTAL $900</p>
+            <div class="sum">
+              <h2>GRAND TOTAL</h2>
+              <h2 class="pink_text">$900</h2>
+            </div>
+          </div>
+          <a type="submit">PROCEED TO CHECKOUT</a>
+        </div>
       </div>
     </div>
     <div class="subscribe">

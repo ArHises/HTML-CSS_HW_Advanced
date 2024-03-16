@@ -1,0 +1,245 @@
+@media (max-width: 1024px) {
+  .navi_bar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .opening_frame {
+    min-height: auto;
+    .open_pic {
+      img {
+        width: 360px;
+      }
+    }
+    &__open_text {
+      justify-content: normal;
+      width: 377px;
+
+      &__pink_line {
+        height: auto;
+      }
+
+      & h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+      &__context {
+        &__align {
+          justify-content: normal;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+  .offers {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .subscribe {
+    overflow: hidden; /* Hide any overflow */
+    position: relative; /* Set position to relative */
+    &__background {
+      width: auto; /* Allow the SVG to adjust its width */
+      height: 100%; /* Set SVG height to full container height */
+      position: absolute; /* Position the SVG absolutely */
+      left: 50%; /* Move the SVG to the center horizontally */
+      transform: translateX(-50%);
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__quote {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .registration {
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 24px;
+    &__ditails {
+      max-width: 360px;
+    }
+  }
+
+  .breadcrumbs {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .cart {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &__check-out {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      width: auto;
+    }
+
+    &__checkout {
+      min-width: 360px;
+    }
+  }
+
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .navi_bar {
+    .un_display {
+      display: none;
+    }
+    &__tools {
+      width: 36px;
+
+      .dropdown {
+        z-index: 99;
+      }
+    }
+  }
+
+  .breadcrumbs {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .filter-sort {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .filter {
+      left: 16px;
+      top: 50%;
+      position: absolute;
+      padding: 0px;
+      z-index: 999;
+      &__heading {
+        display: none;
+      }
+    }
+
+    .sort {
+      position: relative;
+      left: 16px;
+      margin: 0px;
+      margin-right: 16px;
+    }
+  }
+
+  .opening_frame {
+    height: 360px;
+
+    .open_pic {
+      display: none;
+    }
+
+    &__open_text {
+      width: 340px;
+      padding: 0px;
+    }
+  }
+
+  .slider {
+    .description {
+      left: auto;
+      right: auto;
+      width: 100vw;
+
+      &__p {
+        max-width: 320px;
+      }
+    }
+  }
+
+  .offers {
+    &__categories {
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      &__accesories {
+      }
+    }
+  }
+
+  .cart {
+    gap: 24px;
+    &__items {
+      &__item {
+        &__left {
+          img {
+            width: 145px;
+            height: 170px;
+          }
+          font-size: 0.8rem;
+
+          .info {
+            gap: 12px;
+            padding: 0px;
+            padding-left: 5px;
+            &__type {
+              p {
+                font-size: 16px;
+              }
+              input {
+                width: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__check-out {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &__checkout {
+      min-width: 340px;
+    }
+  }
+  .cart__items .cart__options .cart__button {
+    width: 160px;
+  }
+
+  .cart__check-out .cart__adress form input {
+    width: 280px;
+  }
+
+  .cart__items__item__left .info label {
+    font-size: 16px;
+  }
+
+  .subscribe {
+    &__input_mail {
+      input {
+        max-width: 200px;
+      }
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}

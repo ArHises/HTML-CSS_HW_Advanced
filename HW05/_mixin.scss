@@ -1,0 +1,24 @@
+@import "vars";
+
+@mixin center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+@mixin button {
+  color: $textBasicColor;
+  border: 1px solid $textBasicColor;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  &:hover {
+    color: white;
+    background: $textAlightColor;
+
+    svg path {
+      fill: white;
+    }
+  }
+}
